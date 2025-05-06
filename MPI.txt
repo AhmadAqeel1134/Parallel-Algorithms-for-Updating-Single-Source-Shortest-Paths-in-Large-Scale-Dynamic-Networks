@@ -1,0 +1,248 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 50.00      0.01     0.01   574435     0.00     0.00  deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int)
+ 50.00      0.02     0.01                             _init
+  0.00      0.02     0.00   574440     0.00     0.00  frame_dummy
+  0.00      0.02     0.00       20     0.00     0.00  void std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > >::_M_realloc_insert<int&, int&, long long&>(__gnu_cxx::__normal_iterator<std::tuple<int, int, long long>*, std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > > >, int&, int&, long long&)
+  0.00      0.02     0.00       14     0.00     0.00  void std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > >::_M_realloc_insert<std::pair<long long, int> >(__gnu_cxx::__normal_iterator<std::pair<long long, int>*, std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > > >, std::pair<long long, int>&&)
+  0.00      0.02     0.00       11     0.00     0.00  std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&)
+  0.00      0.02     0.00        4     0.00     0.00  std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::~vector()
+  0.00      0.02     0.00        4     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.02     0.00        3     0.00     0.00  exportToCSV(std::vector<long long, std::allocator<long long> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)
+  0.00      0.02     0.00        3     0.00     0.00  std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
+  0.00      0.02     0.00        1     0.00     0.00  distributeGraph(int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, int&, int&)
+  0.00      0.02     0.00        1     0.00     0.00  parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&)
+  0.00      0.02     0.00        1     0.00     0.00  insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int)
+  0.00      0.02     0.00        1     0.00    10.00  readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::_M_default_append(unsigned long)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_fill_assign(unsigned long, int const&)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::_M_fill_assign(unsigned long, long long const&)
+  0.00      0.02     0.00        1     0.00     0.00  std::vector<long long, std::allocator<long long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long long*, std::vector<long long, std::allocator<long long> > >, unsigned long, long long const&)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 50.00% of 0.02 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     50.0    0.00    0.01                 main [1]
+                0.00    0.01       1/1           readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [4]
+                0.00    0.00       1/574435      deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int) [2]
+                0.00    0.00       5/574440      frame_dummy [5]
+                0.00    0.00       4/4           std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [15]
+                0.00    0.00       4/4           std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::~vector() [14]
+                0.00    0.00       3/3           std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [17]
+                0.00    0.00       3/3           exportToCSV(std::vector<long long, std::allocator<long long> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) [16]
+                0.00    0.00       1/1           distributeGraph(int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, int&, int&) [18]
+                0.00    0.00       1/1           parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [19]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) [23]
+                0.00    0.00       1/1           insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int) [20]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long long*, std::vector<long long, std::allocator<long long> > >, unsigned long, long long const&) [25]
+-----------------------------------------------
+                0.00    0.00       1/574435      main [1]
+                0.01    0.00  574434/574435      readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [4]
+[2]     50.0    0.01    0.00  574435         deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int) [2]
+                0.00    0.00      11/11          std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) [13]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     50.0    0.01    0.00                 _init [3]
+-----------------------------------------------
+                0.00    0.01       1/1           main [1]
+[4]     50.0    0.00    0.01       1         readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [4]
+                0.01    0.00  574434/574435      deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int) [2]
+                0.00    0.00  574434/574440      frame_dummy [5]
+                0.00    0.00      20/20          void std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > >::_M_realloc_insert<int&, int&, long long&>(__gnu_cxx::__normal_iterator<std::tuple<int, int, long long>*, std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > > >, int&, int&, long long&) [11]
+-----------------------------------------------
+                0.00    0.00       1/574440      insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int) [20]
+                0.00    0.00       5/574440      main [1]
+                0.00    0.00  574434/574440      readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [4]
+[5]      0.0    0.00    0.00  574440         frame_dummy [5]
+-----------------------------------------------
+                0.00    0.00      20/20          readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [4]
+[11]     0.0    0.00    0.00      20         void std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > >::_M_realloc_insert<int&, int&, long long&>(__gnu_cxx::__normal_iterator<std::tuple<int, int, long long>*, std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > > >, int&, int&, long long&) [11]
+-----------------------------------------------
+                0.00    0.00       1/14          insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int) [20]
+                0.00    0.00      13/14          parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [19]
+[12]     0.0    0.00    0.00      14         void std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > >::_M_realloc_insert<std::pair<long long, int> >(__gnu_cxx::__normal_iterator<std::pair<long long, int>*, std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > > >, std::pair<long long, int>&&) [12]
+-----------------------------------------------
+                0.00    0.00      11/11          deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int) [2]
+[13]     0.0    0.00    0.00      11         std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) [13]
+-----------------------------------------------
+                0.00    0.00       4/4           main [1]
+[14]     0.0    0.00    0.00       4         std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::~vector() [14]
+-----------------------------------------------
+                0.00    0.00       4/4           main [1]
+[15]     0.0    0.00    0.00       4         std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [15]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[16]     0.0    0.00    0.00       3         exportToCSV(std::vector<long long, std::allocator<long long> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) [16]
+-----------------------------------------------
+                0.00    0.00       3/3           main [1]
+[17]     0.0    0.00    0.00       3         std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[18]     0.0    0.00    0.00       1         distributeGraph(int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, int&, int&) [18]
+                0.00    0.00       1/1           std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::_M_default_append(unsigned long) [21]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[19]     0.0    0.00    0.00       1         parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [19]
+                0.00    0.00      13/14          void std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > >::_M_realloc_insert<std::pair<long long, int> >(__gnu_cxx::__normal_iterator<std::pair<long long, int>*, std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > > >, std::pair<long long, int>&&) [12]
+                0.00    0.00       1/1           std::vector<long long, std::allocator<long long> >::_M_fill_assign(unsigned long, long long const&) [24]
+                0.00    0.00       1/1           std::vector<int, std::allocator<int> >::_M_fill_assign(unsigned long, int const&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[20]     0.0    0.00    0.00       1         insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int) [20]
+                0.00    0.00       1/574440      frame_dummy [5]
+                0.00    0.00       1/14          void std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > >::_M_realloc_insert<std::pair<long long, int> >(__gnu_cxx::__normal_iterator<std::pair<long long, int>*, std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > > >, std::pair<long long, int>&&) [12]
+-----------------------------------------------
+                0.00    0.00       1/1           distributeGraph(int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, int&, int&) [18]
+[21]     0.0    0.00    0.00       1         std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::_M_default_append(unsigned long) [21]
+-----------------------------------------------
+                0.00    0.00       1/1           parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [19]
+[22]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_fill_assign(unsigned long, int const&) [22]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[23]     0.0    0.00    0.00       1         std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&) [23]
+-----------------------------------------------
+                0.00    0.00       1/1           parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [19]
+[24]     0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::_M_fill_assign(unsigned long, long long const&) [24]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[25]     0.0    0.00    0.00       1         std::vector<long long, std::allocator<long long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long long*, std::vector<long long, std::allocator<long long> > >, unsigned long, long long const&) [25]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [16] exportToCSV(std::vector<long long, std::allocator<long long> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int) [21] std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::_M_default_append(unsigned long) [24] std::vector<long long, std::allocator<long long> >::_M_fill_assign(unsigned long, long long const&)
+  [18] distributeGraph(int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, int&, int&) [14] std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >::~vector() [25] std::vector<long long, std::allocator<long long> >::_M_fill_insert(__gnu_cxx::__normal_iterator<long long*, std::vector<long long, std::allocator<long long> > >, unsigned long, long long const&)
+  [19] parallelDijkstra(int, int, int, int, std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > > const&, int, int, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&) [12] void std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > >::_M_realloc_insert<std::pair<long long, int> >(__gnu_cxx::__normal_iterator<std::pair<long long, int>*, std::vector<std::pair<long long, int>, std::allocator<std::pair<long long, int> > > >, std::pair<long long, int>&&) [15] std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+   [2] deleteEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, int, int, int, int) [11] void std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > >::_M_realloc_insert<int&, int&, long long&>(__gnu_cxx::__normal_iterator<std::tuple<int, int, long long>*, std::vector<std::tuple<int, int, long long>, std::allocator<std::tuple<int, int, long long> > > >, int&, int&, long long&) [3] _init
+  [20] insertEdgeAndUpdate(std::vector<std::vector<Edge, std::allocator<Edge> >, std::allocator<std::vector<Edge, std::allocator<Edge> > > >&, std::vector<long long, std::allocator<long long> >&, std::vector<int, std::allocator<int> >&, int, int, long long, int, int, int, int) [22] std::vector<int, std::allocator<int> >::_M_fill_assign(unsigned long, int const&) [5] frame_dummy
+   [4] readGraph(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int&) [23] std::vector<int, std::allocator<int> >::_M_fill_insert(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, unsigned long, int const&)
+  [13] std::_Hashtable<int, int, std::allocator<int>, std::__detail::_Identity, std::equal_to<int>, std::hash<int>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, true, true> >::_M_rehash(unsigned long, unsigned long const&) [17] std::vector<int, std::allocator<int> >::vector(unsigned long, std::allocator<int> const&)
